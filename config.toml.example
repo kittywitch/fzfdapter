@@ -1,0 +1,2 @@
+terminal_exec = "alacritty -e"
+fuzzy_exec = "sk --layout=reverse-list"
