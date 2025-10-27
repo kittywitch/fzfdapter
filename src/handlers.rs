@@ -1,18 +1,8 @@
 use {
     crate::config::AdapterConfig,
     anyhow::anyhow,
-    freedesktop_desktop_entry::{default_paths, get_languages_from_env, DesktopEntry, Iter},
-    indexmap::IndexMap,
-    is_executable::IsExecutable,
-    rmp_serde::Serializer,
-    serde::{Deserialize, Serialize},
     std::{
-        collections::HashSet,
-        env,
-        fs::{read_to_string, File},
-        io::{pipe, BufReader, Write},
         mem,
-        os::unix::ffi::OsStrExt,
         path::Path,
         process::{Command, Stdio},
         sync::Arc,

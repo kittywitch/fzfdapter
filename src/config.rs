@@ -1,21 +1,11 @@
 use {
     crate::CFG_DIR,
-    anyhow::anyhow,
-    freedesktop_desktop_entry::{default_paths, get_languages_from_env, DesktopEntry, Iter},
-    indexmap::IndexMap,
-    is_executable::IsExecutable,
-    rmp_serde::Serializer,
     serde::{Deserialize, Serialize},
     std::{
-        collections::HashSet,
         env,
         fs::{read_to_string, File},
-        io::{pipe, BufReader, Write},
-        mem,
+        io::Write,
         os::unix::ffi::OsStrExt,
-        path::Path,
-        process::{Command, Stdio},
-        sync::Arc,
     },
 };
 
