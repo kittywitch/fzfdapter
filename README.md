@@ -1,5 +1,7 @@
 # fzfdapter
 
+The intention of fzfdapter is that it's supposed to be used in a floating terminal to replace something like wofi/rofi/fuzzel/dmenu/...!
+
 ```
 A PATH and desktop file executor that uses fzf/skim/...
 
