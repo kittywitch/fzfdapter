@@ -5,7 +5,6 @@ use {
         env,
         fs::{read_to_string, File},
         io::Write,
-        os::unix::ffi::OsStrExt,
     },
 };
 
@@ -41,6 +40,8 @@ impl AdapterConfig {
             }
         }
     }
+    // It's unnecessary, but it's cute. :p
+    #[allow(dead_code)]
     pub fn save(&self) -> anyhow::Result<()> {
         let xdg_dirs = xdg::BaseDirectories::with_prefix(CFG_DIR);
         let p = xdg_dirs.place_config_file(Self::FNA)?;

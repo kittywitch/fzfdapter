@@ -8,7 +8,6 @@ use {
     clap::{Parser, ValueEnum},
     std::{
         io::{pipe, Write},
-        os::unix::ffi::OsStrExt,
         process::{Command, Stdio},
     },
 };
