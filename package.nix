@@ -8,9 +8,10 @@ rustPlatform.buildRustPackage (_finalAttrs: {
 
   src = ./.;
 
-  cargoHash = "sha256-aaLgttzAlHJciCDn9vQ2bHPoNc6lcXQa4GIJQPvUgyw=";
+  cargoHash = "sha256-gwaH/Q9VN1i3JLruj6aRBhInWy+qHV+g32wSKY++msw=";
 
   meta = {
+    mainProgram = "fzfdapter";
     description = "fzfdapter, a fuzzel/wofi/rofi... thing for your terminal";
     homepage = "https://github.com/kittywitch/fzfdapter";
     license = lib.licenses.gpl3;

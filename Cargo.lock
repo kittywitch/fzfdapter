@@ -165,6 +165,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "52051878f80a721bb68ebfbc930e07b65ba72f2da88968ea5c06fd6ca3d3a127"
 
 [[package]]
+name = "fork"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed479091df6b84e9670acc5fa0339f1d2c6b7459e432455a26c75848048ae14d"
+dependencies = [
+ "libc",
+]
+
+[[package]]
 name = "freedesktop-desktop-entry"
 version = "0.7.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -185,6 +194,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "clap",
+ "fork",
  "freedesktop-desktop-entry",
  "indexmap",
  "is_executable",
