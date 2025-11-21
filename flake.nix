@@ -28,9 +28,7 @@
   } @ inputs:
     flake-utils.lib.eachDefaultSystem (system: let
       treefmtEval = inputs.treefmt-nix.lib.evalModule inputs.nixpkgs.legacyPackages.${system} ./treefmt.nix;
-      pkgs = import nixpkgs {
-        inherit system;
-      };
+      pkgs = nixpkgs.legacyPackages.${system};
     in {
       devShells.default = import ./shell.nix {inherit pkgs;};
 
